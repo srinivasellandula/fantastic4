@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+    <script src="/lib/require.js" data-main="/js/main"></script>
+     <!-- Latest compiled and minified CSS -->
+     <link rel="stylesheet" href="/css/bootstrap.css">
+     <link rel="stylesheet" href="/css/loginForm.css"/>
+     <link rel="stylesheet" href="/css/bootstrap-theme.css">
+
+    <body>
+      <div class="container" ng-app="adminSchoolApp" ng-controller="loginController">
+          <div class="card card-container">
+              <img id="profile-img" class="profile-img-card" src="//ssl.gstatic.com/accounts/ui/avatar_2x.png" />
+              <p id="profile-name" class="profile-name-card"></p>
+            
+             
+              <form class="form-signin" action="/validateForm" method="POST">
+                  <span id="reauth-email" class="reauth-email"></span>
+                  <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus name="username" >
+       
+                  <input type="password" id="inputPassword" class="form-control" placeholder="Password" required name="userpassword" >
+                  <button class="btn btn-lg btn-primary btn-block btn-signin" type="submit">Sign in</button>
+              </form><!-- /form -->
+                <a href="/forgotPassword" class="forgot-password">
+                    Forgot the password?
+                </a>
+          </div><!-- /card-container -->
+      </div><!-- /container -->
+  </body>
+  
+</html>

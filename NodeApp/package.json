@@ -1,0 +1,16 @@
+{
+  "name": "NodeApp",
+  "version": "0.0.0",
+  "description": "Demooo",
+  "main": "demo.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Srinivas Ellandula",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.12.4",
+    "node-simple-router": "^0.9.4-2",
+    "router": "^1.1.1"
+  }
+}
